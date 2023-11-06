@@ -2,12 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>Submit-Form</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
+    <welcome-file>home.html</welcome-file>
   </welcome-file-list>
 
   
@@ -19,6 +14,14 @@
   		<servlet-name>success</servlet-name>
   		<servlet-class>com.register.SuccessServlet</servlet-class>
   </servlet>
+  <servlet>
+  		<servlet-name>servlet1</servlet-name>
+  		<servlet-class>com.attributes.Servlet1</servlet-class>
+  </servlet>
+    <servlet>
+  		<servlet-name>servlet2</servlet-name>
+  		<servlet-class>com.attributes.Servlet2</servlet-class>
+  </servlet>
   
 
   <!-- Jo form ka action hai vo dalna hai url-pattern me -->
@@ -29,5 +32,13 @@
   	<servlet-mapping>
   		<servlet-name>success</servlet-name>
   		<url-pattern>/success</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>servlet1</servlet-name>
+  		<url-pattern>/servlet1</url-pattern>
+  	</servlet-mapping>
+  	  	<servlet-mapping>
+  		<servlet-name>servlet2</servlet-name>
+  		<url-pattern>/servlet2</url-pattern>
   	</servlet-mapping>
 </web-app>
