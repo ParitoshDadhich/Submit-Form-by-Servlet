@@ -15,11 +15,19 @@
 	  <servlet-name>register</servlet-name>
 	  <servlet-class>com.register.RegisterServlet</servlet-class>
   </servlet>
+  <servlet>
+  		<servlet-name>success</servlet-name>
+  		<servlet-class>com.register.SuccessServlet</servlet-class>
+  </servlet>
   
 
   <!-- Jo form ka action hai vo dalna hai url-pattern me -->
     <servlet-mapping >
   		<servlet-name>register</servlet-name>
   		<url-pattern>/RegisterServlet</url-pattern>
-  </servlet-mapping>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>success</servlet-name>
+  		<url-pattern>/success</url-pattern>
+  	</servlet-mapping>
 </web-app>
